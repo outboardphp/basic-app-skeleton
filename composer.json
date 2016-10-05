@@ -1,0 +1,24 @@
+{
+    "name": "garrettw/aspire-app-framework",
+    "description": "The most basic files needed to make a PHP app based on the Aspire framework",
+    "type": "project",
+    "keywords": ["php", "aspire", "skeleton", "app"],
+    "license": "Unlicense",
+    "homepage": "https://github.com/garrettw/aspire-app-skeleton",
+    "authors": [
+        {
+            "name": "Garrett Whitehorn",
+            "homepage": "http://garrettw.net/",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "garrettw/aspire": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "vendor/"
+        }
+    }
+}
