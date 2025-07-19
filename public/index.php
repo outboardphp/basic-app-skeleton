@@ -8,8 +8,7 @@ $config = require '../config/di.php';
 
 // Technically, any PSR-11-compatible DI container can be used,
 // but implementing a different one is on you.
-$container = new Outboard\Di\Container([
+new Outboard\Di\Container([
     new Outboard\Di\ExplicitResolver($config),
-]);
-
-$container->get(Outboard\Framework\Application::class)();
+])
+    ->get(Outboard\Framework\Application::class)();
